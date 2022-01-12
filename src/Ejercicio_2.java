@@ -10,8 +10,15 @@ número menor.
 
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        do{
 
-    }
+            System.out.println(leerNum());
+
+        }while(sc.nextInt()!=0);
+
+            System.out.println("El número mayor es: " + mayor(sc.nextInt()));
+            System.out.println("El número menor es: " + menor(sc.nextInt()));
+        }
 
     public static int leerNum(){
 
@@ -35,7 +42,4 @@ número menor.
         return numMenor;
     }
 
-    public static int media(int num){
-        return 9;
-    }
 }
